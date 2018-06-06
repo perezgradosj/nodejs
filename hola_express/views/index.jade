@@ -1,0 +1,18 @@
+html 
+	head
+		title Mi primera pagina con Express
+	body
+		h1 Hola mundo con Jade y Express
+		h2!= variable
+
+		//Esto es Javascript;//!= me permite interpretar html
+		- var arreglo = [1,2,3,4,5];
+		- for (var i = arreglo.length - 1; i>=0; i--)
+			p= arreglo[i]
+		
+			p!= "<h1>"+arreglo[i]+"</h1>"
+
+			p Hola #{arreglo[i]}
+
+			p.
+				Haz click en #[a(href="www.google.com.pe") este link] por favor
